@@ -207,7 +207,7 @@ test("Adds new item to the list", async ({ page }, testInfo) => {
 ```
 
 Although these tests do not implement Cucumber nor use Gherkin syntax, they are divided into `test.step` blocks, 
-highlighting, initial states (`Given`), user actions (`When`), expected outcomes (`Then`). Playwright also supports hooks for setup and teardown steps, such as `beforeAll`, `beforeEach`, `afterEach` and `afterAll`.
+highlighting initial states (`Given`), user actions (`When`), expected outcomes (`Then`). Playwright also supports hooks for setup and teardown steps, such as `beforeAll`, `beforeEach`, `afterEach` and `afterAll`.
 
 In addition, each user action also includes a screenshot and/or a text data to be attached to the report for detailed analysis of test failures or feature working properly.
 
@@ -244,7 +244,7 @@ Playwright's configuration file, where you can setup:
 ## How to Install
 
 - If you are using this project as basis for yours, just run `npm install` to install its dependencies.
-- However, if you want to start a brand new Playwright project, create a empty directory and run `npm init playwright@latest` on it.
+- However, if you want to start a brand new Playwright project, create an empty directory and run `npm init playwright@latest` on it.
 
 ## How to Test
 
