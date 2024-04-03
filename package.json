@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "Caio Gevegir",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",

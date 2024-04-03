@@ -215,13 +215,23 @@ In addition, each user action also includes a screenshot and/or a text data to b
 
 Contains the tests' report on HTML format. It includes each test's step result, screenshots and user input history.
 
+**IMPORTANT:** This folder is ignored by Git (`.gitignore`) and it will be created when you run the tests for the first time!
+
 ![Report-1](fig/report1.png)
 
 ![Report-2](fig/report2.png)
 
+### `package.json`
+
+Contains this project's description and dependencies:
+
+- `@playwright/test` - The test runner and webdriver
+- `@faker-js/faker` - Fake names, products, number, addresses, etc generator. Great for automated software testing and available in multiple languages. This project uses Brazilian Portuguese (`fakerPT_BR`).
+- `@types/node` - Types for TypeScript.
+
 ### `playwright.config.ts`
 
-Playwright's configuration file, where you can set up:
+Playwright's configuration file, where you can setup:
 
 - Tests directory
 - Reports format and their output folder
@@ -229,10 +239,19 @@ Playwright's configuration file, where you can set up:
 - Browsers where tests will be executed
 - Headless mode
 - Parallel mode
-- Etc.
+- And more.
+
+## How to Install
+
+- If you are using this project as basis for yours, just run `npm install` to install its dependencies.
+- However, if you want to start a brand new Playwright project, create a empty directory and run `npm init playwright@latest` on it.
 
 ## How to Test
 
 Just run `npx playwright test`. Tests will be executed as set up on `playwright.config.ts`.
+
+## References
+
+https://playwright.dev/docs/intro
 
 Enjoy! :)
